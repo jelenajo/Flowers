@@ -1,0 +1,138 @@
+/*Variables*/
+:root {
+    --primary:#CC0000;
+    --white: #FFFFFF;
+    --transition: 0.3s linear;
+    --font--size: 16px;
+}
+/*Basic style*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: var(--font--size);
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+    color: var(--white);
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.py {
+    padding: 100px 0;
+}
+/*nav*/
+nav {
+    background: var(--primary);
+    padding: 13px;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 0 40px;
+    letter-spacing: 2px;
+}
+nav ul li a:hover {
+    color: #131313;
+}
+/*header*/
+.img {
+    background-position: center;
+    background-size: cover;
+    
+}
+.main-header {
+    position: relative;
+}
+header h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    color: var(--primary);
+    position: absolute;
+    bottom: 90px;
+    left: 999px;
+    text-shadow: 0 0 3px var(--white);
+    
+}
+/*text section*/
+.text p {
+    font-size: var(--font--size);
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 3px solid var(--primary);
+}
+/*Section text img*/
+.services img {
+    width: 90%;
+}
+.services h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding:0 0 10px 0;
+}
+.services p {
+    font-size: var(--font--size);
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+/*Gris sistem*/
+/*Grid sistem*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*Footer*/
+footer {
+    background: var(--primary);
+    padding: 40px 100px;
+}
+footer p {
+    text-align: center;
+    font-size: var(--font--size);
+}
+/*Responsive web site*/
+@media(max-width: 767px){
+    nav {
+        width: 90%;
+    }
+    .main-header {
+        width: 90%;
+    }
+    .py {
+        padding: 50px 0;
+    }
+
+}
